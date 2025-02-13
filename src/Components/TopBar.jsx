@@ -3,20 +3,20 @@ import React from "react";
 
 export default function TopBar() {
   return (
-    <div className="topBar_container">
-      <div className="wrapper p-2">
-        <div className="left_content flex items-center">
+    <div className="topBar_container  fixed z-50 top-0 left-0 right-0  ">
+      <div className="wrapper p-3 flex items-center justify-between">
+        <div className=" left_content flex items-center">
           <div className="img_container w-20 ">
             <img
-              className="w-full h-full"
+              className="cursor-pointer w-full h-full"
               src="/images/mountain-2.png"
               alt="mountain"
             />
           </div>
-          <h2 className="font-bold text-lg">Sahand</h2>
+          <h2 className="font-bold text-lg cursor-pointer">Sahand</h2>
         </div>
         <div className="right_content flex items-center gap-1 ">
-          <div className="relative">
+          <div className="relative cursor-pointer" >
             <Icon
               className="text-blue-800"
               icon="solar:bell-bold-duotone"
@@ -26,7 +26,7 @@ export default function TopBar() {
             <span className="bg-red-600 text-white  absolute w-3 flex items-center justify-center text-[8px] rounded-full top-0">5</span>
           </div>
 
-          <div className="relative">
+          <div className="relative cursor-pointer">
             <Icon
               className="text-blue-800"
               icon="solar:earth-bold-duotone"
@@ -36,7 +36,7 @@ export default function TopBar() {
               <span className="bg-red-600 text-white  absolute w-3 flex items-center justify-center text-[8px] rounded-full top-0">2</span>
           </div>
 
-          <div>
+          <div className="cursor-pointer">
             <Icon
               className="text-blue-800"
               icon="solar:settings-bold-duotone"
