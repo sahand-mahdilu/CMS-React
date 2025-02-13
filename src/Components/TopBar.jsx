@@ -16,7 +16,13 @@ export default function TopBar() {
             </div>
             <div className="right_content">
 
-            <Icon className='text-blue-800' icon="solar:bell-bold-duotone" width="24" height="24"   />
+           <div>
+           <Icon className='text-blue-800' icon="solar:bell-bold-duotone" width="24" height="24"   />
+           </div>
+
+            <div>
+            <Icon icon="solar:earth-bold-duotone" width="24" height="24"   />
+            </div>
 
             </div>
 
