@@ -21,7 +21,11 @@ export default function TopBar() {
            </div>
 
             <div>
-            <Icon icon="solar:earth-bold-duotone" width="24" height="24"   />
+            <Icon className='text-blue-800' icon="solar:earth-bold-duotone" width="24" height="24"   />
+            </div>
+
+            <div>
+            <Icon className='text-blue-800' icon="solar:settings-bold-duotone" width="24" height="24"   />
             </div>
 
             </div>
