@@ -43,7 +43,6 @@ export default function Users() {
         <tr key={user.id} className=" ">
         <td className="p-2 px-16">{user.id}</td>
 
-        <NavLink to={`/mainUser/${user.id}`}>
         <td className="p-2 px-16">
           <div className="flex items-center gap-2">
             <div className="img-contaner size-12 rounded-full overflow-hidden">
@@ -56,13 +55,14 @@ export default function Users() {
             <span>{user.name}</span>
           </div>
         </td>
-        </NavLink>
         <td className="p-2 px-16">{user.email}</td>
         <td className="p-2 px-16">{user.status}</td>
         <td className="p-2 px-16">{user.transaction}</td>
         <td className="p-2 px-16">
           <div className="flex gap-2">
+          <NavLink to={`/mainUser/${user.id}`}>
             <button className="bg-blue-400 px-2 rounded-md">edit</button>
+        </NavLink>
             <button onClick={()=>deleteHandler(user.id)} className="bg-red-400 px-2 rounded-md">delete</button>
 
           </div>
