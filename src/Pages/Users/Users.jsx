@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { UsersData } from "../../Datas/Users";
 
 export default function Users() {
+
+  const [users,setUsers]=useState(UsersData)
+
   return (
     <div className="w-full p-3 flex justify-center">
       <table className="">
@@ -15,31 +19,42 @@ export default function Users() {
           </tr>
         </thead>
         <tbody>
-          <tr className=" ">
-            <td className="p-2 px-16">1</td>
-            <td className="p-2 px-16">
-              <div className="flex items-center gap-2">
-                <div className="img-contaner size-12 rounded-full overflow-hidden">
-                  <img
-                    className="w-full h-full"
-                    src="./images/profile.png"
-                    alt=""
-                  />
-                </div>
-                <span>sahand</span>
-              </div>
-            </td>
-            <td className="p-2 px-16">sahand@gmail.com</td>
-            <td className="p-2 px-16">active</td>
-            <td className="p-2 px-16">100$</td>
-            <td className="p-2 px-16">
-              <div className="flex gap-2">
-                <button className="bg-blue-400">edit</button>
-                <button className="bg-red-400">delete</button>
 
-              </div>
-            </td>
-          </tr>
+    {users.map(user=>{
+      return(
+
+        <tr key={user.id} className=" ">
+        <td className="p-2 px-16">{user.id}</td>
+        <td className="p-2 px-16">
+          <div className="flex items-center gap-2">
+            <div className="img-contaner size-12 rounded-full overflow-hidden">
+              <img
+                className="w-full h-full"
+                src="./images/profile.png"
+                alt=""
+              />
+            </div>
+            <span>{user.name}</span>
+          </div>
+        </td>
+        <td className="p-2 px-16">{user.email}</td>
+        <td className="p-2 px-16">{user.status}</td>
+        <td className="p-2 px-16">{user.transaction}</td>
+        <td className="p-2 px-16">
+          <div className="flex gap-2">
+            <button className="bg-blue-400 px-2 rounded-md">edit</button>
+            <button className="bg-red-400 px-2 rounded-md">delete</button>
+
+          </div>
+        </td>
+      </tr>
+      )
+
+
+    })}
+
+
+         
         </tbody>
       </table>
     </div>
