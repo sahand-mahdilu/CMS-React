@@ -9,7 +9,7 @@ import {ResponsiveContainer,
 export default function Chart({title, data, dataKey,grid}) {
   return (
     <div className='chart m-4 p-5 shadow-lg'>
-        <h3 className='chartTitle'>
+        <h3 className='font-bold text-blue-700'>
             {title}
         </h3>
 

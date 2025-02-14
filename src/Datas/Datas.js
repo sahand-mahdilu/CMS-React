@@ -1,7 +1,7 @@
 
 let xAxisData=[
     {"name":"Jan",
-    "sale":"121000"},
+    "sale":"221000"},
     {"name":"Feb",
     "sale":"11000"},
     {"name":"Mar",
@@ -19,7 +19,7 @@ let xAxisData=[
     {"name":"Sep",
     "sale":"351000"},
     {"name":"Oct",
-    "sale":"341000"},
+    "sale":"141000"},
     {"name":"Nov",
     "sale":"101000"},
     {"name":"Dec",
