@@ -5,9 +5,8 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 export default function LeftWidget() {
 
     let members = NewMembers
-    console.log(members);
   return (
-    <div className='w-full'>
+    <div className='w-[100%] shadow-xl mt-5 ml-4 p-2'>
         <div>
             <h2 className='font-bold pb-2'>New members</h2>
 
@@ -15,7 +14,7 @@ export default function LeftWidget() {
                 members.map(member=>{
 
                     return(
-                        <div className='flex justify-between mt-2'>
+                        <div key={member.id} className='flex justify-between mt-2'>
                 <div className='img-contaner size-12 rounded-full overflow-hidden'>
                     <img className='w-full h-full' src="./images/profile.png" alt="" />
                 </div>
@@ -44,5 +43,3 @@ export default function LeftWidget() {
 }
 
 
-
-// className={`px-2 rounded-lg ${member.status==="Approved"? "bg-green-300": member.status==="Pending"?"bg-blue-400": "bg-red-400" }`}

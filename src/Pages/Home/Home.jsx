@@ -11,9 +11,9 @@ export default function Home() {
 
     <Feature/>
     <Chart grid title="Month Sale" data={xAxisData} dataKey="sale"/>
-    <div className='flex'>
+    <div className='flex gap-4 mb-6'>
       <LeftWidget/>
-      {/* <RightWidget/> */}
+      <RightWidget/>
 
     </div>
     
