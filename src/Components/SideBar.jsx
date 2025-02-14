@@ -1,14 +1,21 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
+import { Outlet } from "react-router";
+import TopBar from "./TopBar";
 
 export default function SideBar() {
   return (
-    <div  className="  h-[100vh] min-w-52 bg-blue-50  sticky top-20 ">
-      <div className="wrapper p-2 ">
+    <>
+      <TopBar/>
+    <div className="flex">
+    <div  className=" sticky top-20  h-full min-w-52 bg-blue-50   ">
+      <div className=" wrapper p-2  ">
         <div>
           <h2 className="font-semibold text-gray-400 mb-1">Dashbord</h2>
 
           <ul className="">
+
+            
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
               <Icon
                 className="text-blue-600"
@@ -111,5 +118,11 @@ export default function SideBar() {
         </div>
       </div>
     </div>
+    <div className="p-2">
+    <Outlet/>
+
+    </div>
+    </div>
+    </>
   );
 }

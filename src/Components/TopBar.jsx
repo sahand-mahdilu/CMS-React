@@ -3,7 +3,7 @@ import React from "react";
 
 export default function TopBar() {
   return (
-    <div className="topBar_container bg-white  fixed z-50 top-0 left-0 right-0  ">
+    <div className="topBar_container bg-white  sticky z-50 top-0 left-0 right-0  ">
       <div className="wrapper p-3 flex items-center justify-between">
         <div className=" left_content flex items-center">
           <div className="img_container w-20 ">
