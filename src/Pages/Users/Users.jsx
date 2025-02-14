@@ -5,6 +5,22 @@ export default function Users() {
 
   const [users,setUsers]=useState(UsersData)
 
+
+
+  const deleteHandler= (userId)=>{
+
+    setUsers(users.filter(user=>{
+
+      return user.id !==userId
+    }))
+
+     
+
+    
+
+  }
+
+
   return (
     <div className="w-full p-3 flex justify-center">
       <table className="">
@@ -43,7 +59,7 @@ export default function Users() {
         <td className="p-2 px-16">
           <div className="flex gap-2">
             <button className="bg-blue-400 px-2 rounded-md">edit</button>
-            <button className="bg-red-400 px-2 rounded-md">delete</button>
+            <button onClick={()=>deleteHandler(user.id)} className="bg-red-400 px-2 rounded-md">delete</button>
 
           </div>
         </td>
