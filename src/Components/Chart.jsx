@@ -8,7 +8,7 @@ import {ResponsiveContainer,
 
 export default function Chart({title, data, dataKey,grid}) {
   return (
-    <div className='chart'>
+    <div className='chart m-4 p-5 shadow-lg'>
         <h3 className='chartTitle'>
             {title}
         </h3>
@@ -17,7 +17,7 @@ export default function Chart({title, data, dataKey,grid}) {
             <LineChart data={data}>
 
                 <XAxis dataKey="name"  stroke='#5550bd'/>
-                <Line dataKey={dataKey} stroke='#5550bd'/>
+                <Line type={'monotone'} dataKey={dataKey} stroke='#5550bd'/>
                 <Tooltip />
                 {grid && <CartesianGrid stroke='#e0dfdf' strokeDasharray={10}/>}
             </LineChart>

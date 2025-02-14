@@ -9,6 +9,7 @@ export default function Home() {
 
     <Feature/>
     <Chart grid title="Month Sale" data={xAxisData} dataKey="sale"/>
+    
 
     </div>
   )
