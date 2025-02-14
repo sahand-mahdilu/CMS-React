@@ -6,7 +6,7 @@ export default function LeftWidget() {
 
     let members = NewMembers
   return (
-    <div className='w-[100%] shadow-xl mt-5 ml-4 p-2'>
+    <div className='w-[100%] shadow-xl bg-slate-50 ml-4 p-10'>
         <div>
             <h2 className='font-bold pb-2'>New members</h2>
 
