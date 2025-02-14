@@ -1,10 +1,11 @@
 import React from 'react'
+import Feature from '../../Components/Feature'
 
 export default function Home() {
   return (
-    <div>Home Sahand
+    <div>
 
-    Lorem ipsum stinctio ipsa accusantium maiores quas voluptatum veritatis nostrum, odio quae provident?
+    <Feature/>
 
     </div>
   )

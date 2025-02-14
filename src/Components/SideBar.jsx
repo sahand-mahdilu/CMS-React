@@ -127,7 +127,7 @@ export default function SideBar() {
         </div>
       </div>
     </div>
-    <div className="p-2">
+    <div className="p-2 w-full">
     <Outlet/>
 
     </div>
