@@ -9,7 +9,7 @@ import SideBar from './Components/SideBar.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <TopBar/>
-    <div className='flex'>
+    <div className='flex mt-20 '>
       <SideBar/>
 
     <RouterProvider router={router}/>

@@ -4,7 +4,7 @@ import React from "react";
 export default function SideBar() {
   return (
     <div  className="  h-[100vh] min-w-52 bg-blue-50  sticky top-20 ">
-      <div className="wrapper p-2 sticky top-20 ">
+      <div className="wrapper p-2 ">
         <div>
           <h2 className="font-semibold text-gray-400 mb-1">Dashbord</h2>
 
