@@ -1,6 +1,8 @@
 import React from 'react'
 import Feature from '../../Components/Feature'
 import Chart from '../../Components/Chart'
+import LeftWidget from '../../Components/LeftWidget'
+import RightWidget from '../../Components/RightWidget'
 import { xAxisData } from '../../Datas/Datas'
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
     <Feature/>
     <Chart grid title="Month Sale" data={xAxisData} dataKey="sale"/>
     <div className='flex'>
+      <LeftWidget/>
+      {/* <RightWidget/> */}
 
     </div>
     
