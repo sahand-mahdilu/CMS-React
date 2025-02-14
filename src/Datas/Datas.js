@@ -29,3 +29,5 @@ let xAxisData=[
 
 
 ]
+
+export{xAxisData}
