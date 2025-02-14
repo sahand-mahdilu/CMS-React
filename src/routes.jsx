@@ -4,15 +4,17 @@ import NewUser from "./Pages/NewUser/NewUser";
 import Products from "./Pages/Products/Products";
 import Users from "./Pages/Users/Users";
 import SideBar from "./Components/SideBar";
+import MainUser from "./Pages/MainUser/MainUser";
 
 let router= createBrowserRouter([
 
     {path:"/" ,element:<SideBar/>, children:[
 
         {path:"/",element:<Home/>},
-        {path:"/newUser",element:<NewUser/>},
-        {path:"/products",element:<Products/>},
-        {path:"/users",element:<Users/>}
+        {path:"newUser",element:<NewUser/>},
+        {path:"products",element:<Products/>},
+        {path:"users",element:<Users/>},
+        {path:"mainUser/:id",element:<MainUser/>},
 
 
     ]}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { UsersData } from "../../Datas/Users";
+import { NavLink } from "react-router";
 
 export default function Users() {
 
@@ -41,6 +42,8 @@ export default function Users() {
 
         <tr key={user.id} className=" ">
         <td className="p-2 px-16">{user.id}</td>
+
+        <NavLink to={`/mainUser/${user.id}`}>
         <td className="p-2 px-16">
           <div className="flex items-center gap-2">
             <div className="img-contaner size-12 rounded-full overflow-hidden">
@@ -53,6 +56,7 @@ export default function Users() {
             <span>{user.name}</span>
           </div>
         </td>
+        </NavLink>
         <td className="p-2 px-16">{user.email}</td>
         <td className="p-2 px-16">{user.status}</td>
         <td className="p-2 px-16">{user.transaction}</td>
