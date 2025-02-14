@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
-import { Outlet } from "react-router";
+import { NavLink, Outlet } from "react-router";
 import TopBar from "./TopBar";
 
 export default function SideBar() {
@@ -15,6 +15,8 @@ export default function SideBar() {
 
           <ul className="">
 
+            <NavLink to={'/'}>
+
             
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
               <Icon
@@ -25,6 +27,7 @@ export default function SideBar() {
               />
               <span>Home</span>
             </li>
+            </NavLink>
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
               <Icon
                 className="text-blue-600"
@@ -50,18 +53,24 @@ export default function SideBar() {
           <h2 className="font-semibold text-gray-400 mb-1">Quic Menu</h2>
 
           <ul>
+            <NavLink to={"users"}>
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
             <Icon className="text-blue-600" icon="solar:user-bold-duotone" width="24" height="24"  />
               <span>Users</span>
             </li>
+            </NavLink>
+      
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
             <Icon className="text-blue-600" icon="solar:user-bold-duotone" width="24" height="24"  />
               <span>New Users</span>
             </li>
+           
+            <NavLink to={"products"}>
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
             <Icon className="text-blue-600" icon="material-symbols:production-quantity-limits-rounded" width="24" height="24"   />
               <span>Products</span>
             </li>
+            </NavLink>
             <li className="hover:bg-blue-200 rounded-lg p-1 cursor-pointer flex items-center">
             <Icon className="text-blue-600" icon="material-symbols:attach-money" width="24" height="24" />
               <span>Transactions</span>
