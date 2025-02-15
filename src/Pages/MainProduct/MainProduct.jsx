@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { use, useState } from 'react'
 import Chart from '../../Components/Chart'
 import { mainProductData } from '../../Datas/Datas'
+import { useParams } from 'react-router'
+import { productsData } from '../../Datas/Products'
+
+
 
 export default function MainProduct() {
+
+    const[products,setProducts]=useState(productsData)
+    console.log(products);
+
+let param = useParams()
+console.log(param);
+
   return (
     <div className='p-3'>
         <div className='flex items-center justify-between'>
@@ -15,6 +26,13 @@ export default function MainProduct() {
 
             <div className='chart '>
                 <Chart title="sale in mounth" data={mainProductData} dataKey={"sale"}/>
+            </div>
+
+            <div className='p-2 product_container'>
+
+                
+
+
             </div>
             
         </div>
