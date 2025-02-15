@@ -5,6 +5,7 @@ import Products from "./Pages/Products/Products";
 import Users from "./Pages/Users/Users";
 import SideBar from "./Components/SideBar";
 import MainUser from "./Pages/MainUser/MainUser";
+import MainProduct from "./Pages/MainProduct/MainProduct";
 
 let router= createBrowserRouter([
 
@@ -15,6 +16,7 @@ let router= createBrowserRouter([
         {path:"products",element:<Products/>},
         {path:"users",element:<Users/>},
         {path:"mainUser/:id",element:<MainUser/>},
+        {path:"mainProduct/:id",element:<MainProduct/>},
 
 
     ]}
