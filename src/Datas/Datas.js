@@ -30,4 +30,10 @@ let xAxisData=[
 
 ]
 
-export{xAxisData}
+let mainProductData=[
+    {"name":"Jan","sale":4000},
+    {"name":"Feb","sale":2000},
+    {"name":"Mar","sale":6000},
+]
+
+export{xAxisData,mainProductData}
