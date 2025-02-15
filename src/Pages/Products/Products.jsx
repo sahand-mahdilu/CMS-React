@@ -53,7 +53,7 @@ export default function Products() {
           <span>{item.name}</span>
         </div>
       </td>
-      <td>price</td>
+      <td className='p-2 px-16'>{item.price}</td>
       
     
       <td className="p-2 px-16">
