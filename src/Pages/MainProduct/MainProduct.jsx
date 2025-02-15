@@ -1,5 +1,6 @@
 import React from 'react'
 import Chart from '../../Components/Chart'
+import { mainProductData } from '../../Datas/Datas'
 
 export default function MainProduct() {
   return (
@@ -12,8 +13,8 @@ export default function MainProduct() {
 
         <div>
 
-            <div>
-                <Chart title="sale in mounth" />
+            <div className='chart '>
+                <Chart title="sale in mounth" data={mainProductData} dataKey={"sale"}/>
             </div>
             
         </div>
