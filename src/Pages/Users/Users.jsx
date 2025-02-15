@@ -60,9 +60,9 @@ export default function Users() {
         <td className="p-2 px-16">{user.transaction}</td>
         <td className="p-2 px-16">
           <div className="flex gap-2">
-          <NavLink to={`/mainUser/${user.id}`}>
+          
             <button className="bg-blue-400 px-2 rounded-md">edit</button>
-        </NavLink>
+       
             <button onClick={()=>deleteHandler(user.id)} className="bg-red-400 px-2 rounded-md">delete</button>
 
           </div>
