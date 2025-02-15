@@ -86,7 +86,7 @@ export default function MainProduct() {
 <div>
     <div className='right_content'>
         <h2 className='font-semibold'>Product Name</h2>
-        <input className='my-3 px-2 bg-slate-200 rounded-e-md' type="text" value={products.name} />
+        <input className='my-3 px-2 bg-slate-200 rounded-md' type="text" value={products.name} />
         <hr />
         <div className='flex gap-2 mt-2'>
         <label htmlFor="stock">In-stock</label>
